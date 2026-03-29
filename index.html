@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="banner">
+    <h1>🐍 Snake Game</h1>
+  </header>
+
+  <main>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <p id="score">Score: 0</p>
+    <p id="highscore">High Score: 0</p>
+    <button onclick="resetGame()">Restart Game</button>
+    <button onclick="togglePause()">Pause/Resume</button>
+
+    <h3>Theme:</h3>
+    <select id="theme" onchange="changeTheme()">
+      <option value="classic">Classic</option>
+      <option value="neon">Neon</option>
+      <option value="dark">Dark</option>
+    </select>
+
+    <h2>Leaderboard</h2>
+    <ol id="leaderboard"></ol>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Abhinav's Game Hub</p>
+  </footer>
+</body>
+</html>
